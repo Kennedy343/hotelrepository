@@ -39,9 +39,9 @@ public class login extends javax.swing.JFrame {
         labelImageUser = new javax.swing.JLabel();
         labelImageKey = new javax.swing.JLabel();
         txtUser = new javax.swing.JTextField();
-        txtPassword = new javax.swing.JTextField();
         labelMensaje = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        txtPassword = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -82,16 +82,6 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(txtUser);
         txtUser.setBounds(450, 160, 210, 30);
 
-        txtPassword.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
-        txtPassword.setText("Ingrese su contraseña");
-        txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtPasswordMouseClicked(evt);
-            }
-        });
-        jPanel1.add(txtPassword);
-        txtPassword.setBounds(450, 310, 210, 30);
-
         labelMensaje.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         labelMensaje.setText("Inicio de sesion");
         jPanel1.add(labelMensaje);
@@ -107,6 +97,15 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(460, 410, 130, 30);
 
+        txtPassword.setText("jPasswordField1");
+        txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtPasswordMouseClicked(evt);
+            }
+        });
+        jPanel1.add(txtPassword);
+        txtPassword.setBounds(460, 310, 200, 30);
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 500));
 
         pack();
@@ -116,15 +115,15 @@ public class login extends javax.swing.JFrame {
         txtUser.setText("");
     }//GEN-LAST:event_txtUserMouseClicked
 
-    private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
-        txtPassword.setText("");
-    }//GEN-LAST:event_txtPasswordMouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         menu abrir = new menu();
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
+        txtPassword.setText("");
+    }//GEN-LAST:event_txtPasswordMouseClicked
 
     /**
      * @param args the command line arguments
@@ -160,7 +159,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel labelImageUser;
     private javax.swing.JLabel labelImagehotel;
     private javax.swing.JLabel labelMensaje;
-    private javax.swing.JTextField txtPassword;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
