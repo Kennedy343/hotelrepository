@@ -42,16 +42,19 @@ public class menu extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         txtRegistro = new javax.swing.JLabel();
         labelImageRegistro = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        labelImageClose = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(50, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelTexto.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 36)); // NOI18N
+        labelTexto.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 48)); // NOI18N
         labelTexto.setText("Menu");
-        jPanel1.add(labelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 106, 51));
+        jPanel1.add(labelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 140, 51));
 
         jPanel2.setBackground(new java.awt.Color(50, 51, 51));
         jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -113,7 +116,35 @@ public class menu extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 460, 90));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 410));
+        jPanel5.setBackground(new java.awt.Color(50, 51, 51));
+        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel5MouseExited(evt);
+            }
+        });
+        jPanel5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPanel5KeyPressed(evt);
+            }
+        });
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelImageClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cerrar-sesion.png"))); // NOI18N
+        jPanel5.add(labelImageClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 60, 70));
+
+        jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
+        jLabel1.setText("Cerrar Sesion");
+        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 160, 20));
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 460, 100));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -141,6 +172,26 @@ public class menu extends javax.swing.JFrame {
     private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
         jPanel3.setBackground(new Color(0x323333));
     }//GEN-LAST:event_jPanel3MouseExited
+
+    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
+        jPanel5.setBackground(new Color(0x1a1b1f));
+    }//GEN-LAST:event_jPanel5MouseEntered
+
+    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
+        jPanel5.setBackground(new Color(0x323333));
+    }//GEN-LAST:event_jPanel5MouseExited
+
+    private void jPanel5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel5KeyPressed
+//        login abrir = new login();
+//        abrir.setVisible(true);
+        //codigo de error
+    }//GEN-LAST:event_jPanel5KeyPressed
+
+    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+        login abrir = new login();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jPanel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -178,11 +229,14 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JLabel labelImageCliente;
+    private javax.swing.JLabel labelImageClose;
     private javax.swing.JLabel labelImageRegistro;
     private javax.swing.JLabel labelImageUsuarios;
     private javax.swing.JLabel labelTexto;
