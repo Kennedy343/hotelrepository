@@ -5,6 +5,8 @@
  */
 package framesCruds;
 
+import java.awt.Color;
+
 /**
  *
  * @author PC
@@ -16,6 +18,8 @@ public class menu extends javax.swing.JFrame {
      */
     public menu() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Menu");
     }
 
     /**
@@ -27,21 +31,116 @@ public class menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        labelTexto = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        labelImageUsuarios = new javax.swing.JLabel();
+        txtusuario = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        txtCliente = new javax.swing.JLabel();
+        labelImageCliente = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        txtRegistro = new javax.swing.JLabel();
+        labelImageRegistro = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(50, 51, 51));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelTexto.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 36)); // NOI18N
+        labelTexto.setText("Menu");
+        jPanel1.add(labelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 106, 51));
+
+        jPanel2.setBackground(new java.awt.Color(50, 51, 51));
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel2MouseExited(evt);
+            }
+        });
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        labelImageUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuario.png"))); // NOI18N
+        jPanel2.add(labelImageUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 70, 80));
+
+        txtusuario.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
+        txtusuario.setText("Usuarios");
+        jPanel2.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 460, 80));
+
+        jPanel4.setBackground(new java.awt.Color(50, 51, 51));
+        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel4MouseExited(evt);
+            }
+        });
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtCliente.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
+        txtCliente.setText("Clientes");
+        jPanel4.add(txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 120, -1));
+
+        labelImageCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cliente.png"))); // NOI18N
+        jPanel4.add(labelImageCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 70, 60));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 460, 100));
+
+        jPanel3.setBackground(new java.awt.Color(50, 51, 51));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel3MouseExited(evt);
+            }
+        });
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtRegistro.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
+        txtRegistro.setText("Registros");
+        jPanel3.add(txtRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 120, -1));
+
+        labelImageRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/verificar.png"))); // NOI18N
+        jPanel3.add(labelImageRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 70));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 460, 90));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 410));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
+        jPanel2.setBackground(new Color(0x1a1b1f));
+    }//GEN-LAST:event_jPanel2MouseEntered
+
+    private void jPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseExited
+        jPanel2.setBackground(new Color(0x323333));
+    }//GEN-LAST:event_jPanel2MouseExited
+
+    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
+        jPanel4.setBackground(new Color(0x1a1b1f));
+    }//GEN-LAST:event_jPanel4MouseEntered
+
+    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
+        jPanel4.setBackground(new Color(0x323333));
+    }//GEN-LAST:event_jPanel4MouseExited
+
+    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
+        jPanel3.setBackground(new Color(0x1a1b1f));
+    }//GEN-LAST:event_jPanel3MouseEntered
+
+    private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
+        jPanel3.setBackground(new Color(0x323333));
+    }//GEN-LAST:event_jPanel3MouseExited
 
     /**
      * @param args the command line arguments
@@ -79,5 +178,16 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel labelImageCliente;
+    private javax.swing.JLabel labelImageRegistro;
+    private javax.swing.JLabel labelImageUsuarios;
+    private javax.swing.JLabel labelTexto;
+    private javax.swing.JLabel txtCliente;
+    private javax.swing.JLabel txtRegistro;
+    private javax.swing.JLabel txtusuario;
     // End of variables declaration//GEN-END:variables
 }

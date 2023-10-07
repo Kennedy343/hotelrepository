@@ -19,6 +19,7 @@ public class login extends javax.swing.JFrame {
     public login() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Login");
     }
 
     
@@ -98,6 +99,11 @@ public class login extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         jButton1.setText("Iniciar Sesion");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(460, 410, 130, 30);
 
@@ -113,6 +119,12 @@ public class login extends javax.swing.JFrame {
     private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
         txtPassword.setText("");
     }//GEN-LAST:event_txtPasswordMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        menu abrir = new menu();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
