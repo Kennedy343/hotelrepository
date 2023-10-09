@@ -49,15 +49,11 @@ public class frameUsuario extends javax.swing.JFrame {
         tablaUsuario = new javax.swing.JTable();
         jSeparator1 = new javax.swing.JSeparator();
         labelImageRegresar = new javax.swing.JLabel();
-        labelRegresar = new javax.swing.JLabel();
         labelVer = new javax.swing.JLabel();
         labelOculto = new javax.swing.JLabel();
         labelGuardar = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,30 +71,30 @@ public class frameUsuario extends javax.swing.JFrame {
 
         labelContraseña.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         labelContraseña.setText("Ingrese la contraseña para usuario:");
-        jPanel1.add(labelContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+        jPanel1.add(labelContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         labelCorreo.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         labelCorreo.setText("Ingrese el correo electrónico del usuario:");
-        jPanel1.add(labelCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        jPanel1.add(labelCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         labelNombreU.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         labelNombreU.setText("Nombre completo del usuario:");
-        jPanel1.add(labelNombreU, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+        jPanel1.add(labelNombreU, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
         labelTelefono.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         labelTelefono.setText("Número de telefóno del usuario:");
-        jPanel1.add(labelTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
+        jPanel1.add(labelTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
         jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 350, -1));
-        jPanel1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 290, -1));
-        jPanel1.add(txtNombreU, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 350, -1));
+        jPanel1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 290, -1));
+        jPanel1.add(txtNombreU, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 350, -1));
 
         txtTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtTelefonoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 280, -1));
-        jPanel1.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 320, -1));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 280, -1));
+        jPanel1.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 320, -1));
 
         tablaUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -113,10 +109,12 @@ public class frameUsuario extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaUsuario);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 870, 130));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 870, 10));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 870, 160));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 870, 20));
 
+        labelImageRegresar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         labelImageRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/flecha-izquierda.png"))); // NOI18N
+        labelImageRegresar.setText("Regresar");
         labelImageRegresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelImageRegresar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -125,17 +123,13 @@ public class frameUsuario extends javax.swing.JFrame {
         });
         jPanel1.add(labelImageRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        labelRegresar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        labelRegresar.setText("Regresar");
-        jPanel1.add(labelRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, -1, -1));
-
         labelVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/verl.png"))); // NOI18N
         labelVer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 labelVerMouseClicked(evt);
             }
         });
-        jPanel1.add(labelVer, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 142, -1, 30));
+        jPanel1.add(labelVer, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, -1, 30));
 
         labelOculto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/oculto.png"))); // NOI18N
         labelOculto.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -143,31 +137,25 @@ public class frameUsuario extends javax.swing.JFrame {
                 labelOcultoMouseClicked(evt);
             }
         });
-        jPanel1.add(labelOculto, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, -1, -1));
+        jPanel1.add(labelOculto, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, -1, -1));
 
+        labelGuardar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         labelGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save-solid-60.png"))); // NOI18N
+        labelGuardar.setText("Guardar");
         labelGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(labelGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
+        jPanel1.add(labelGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, -1, -1));
 
+        jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/editar.png"))); // NOI18N
+        jLabel1.setText("Editar");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/borrar.png"))); // NOI18N
+        jLabel2.setText("Eliminar");
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel3.setText("Guardar");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 110, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel4.setText("Editar");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 190, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel5.setText("Eliminar");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 530));
 
@@ -234,9 +222,6 @@ public class frameUsuario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
@@ -247,7 +232,6 @@ public class frameUsuario extends javax.swing.JFrame {
     private javax.swing.JLabel labelNombre;
     private javax.swing.JLabel labelNombreU;
     private javax.swing.JLabel labelOculto;
-    private javax.swing.JLabel labelRegresar;
     private javax.swing.JLabel labelTelefono;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JLabel labelVer;
