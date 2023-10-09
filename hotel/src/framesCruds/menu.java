@@ -54,7 +54,7 @@ public class menu extends javax.swing.JFrame {
 
         labelTexto.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 48)); // NOI18N
         labelTexto.setText("Menu");
-        jPanel1.add(labelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 140, 51));
+        jPanel1.add(labelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 140, 51));
 
         jPanel2.setBackground(new java.awt.Color(50, 51, 51));
         jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -68,13 +68,13 @@ public class menu extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labelImageUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/usuario.png"))); // NOI18N
-        jPanel2.add(labelImageUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 70, 80));
+        jPanel2.add(labelImageUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 70, 80));
 
         txtusuario.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
         txtusuario.setText("Usuarios");
-        jPanel2.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, -1));
+        jPanel2.add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 120, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 460, 80));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 660, 80));
 
         jPanel4.setBackground(new java.awt.Color(50, 51, 51));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -89,12 +89,12 @@ public class menu extends javax.swing.JFrame {
 
         txtCliente.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
         txtCliente.setText("Clientes");
-        jPanel4.add(txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 120, -1));
+        jPanel4.add(txtCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 120, -1));
 
         labelImageCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cliente.png"))); // NOI18N
-        jPanel4.add(labelImageCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 70, 60));
+        jPanel4.add(labelImageCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 70, 60));
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 460, 100));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 660, 100));
 
         jPanel3.setBackground(new java.awt.Color(50, 51, 51));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -109,12 +109,12 @@ public class menu extends javax.swing.JFrame {
 
         txtRegistro.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
         txtRegistro.setText("Registros");
-        jPanel3.add(txtRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 120, -1));
+        jPanel3.add(txtRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 120, -1));
 
         labelImageRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/verificar.png"))); // NOI18N
-        jPanel3.add(labelImageRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 70));
+        jPanel3.add(labelImageRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 70, 70));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 460, 90));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 660, 90));
 
         jPanel5.setBackground(new java.awt.Color(50, 51, 51));
         jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -136,15 +136,15 @@ public class menu extends javax.swing.JFrame {
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labelImageClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cerrar-sesion.png"))); // NOI18N
-        jPanel5.add(labelImageClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 60, 70));
+        jPanel5.add(labelImageClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 60, 70));
 
         jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
         jLabel1.setText("Cerrar Sesion");
-        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 160, 20));
+        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 160, 20));
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 460, 100));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 660, 100));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 510));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
