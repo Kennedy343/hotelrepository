@@ -85,6 +85,9 @@ public class menu extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(50, 51, 51));
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jPanel4MouseEntered(evt);
             }
@@ -203,10 +206,16 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
-        frameCliente abrir = new frameCliente();
+        frameUsuario abrir = new frameUsuario();
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jPanel2MouseClicked
+
+    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+        frameCliente abrir = new frameCliente();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jPanel4MouseClicked
 
     /**
      * @param args the command line arguments

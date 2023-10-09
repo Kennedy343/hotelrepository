@@ -48,13 +48,13 @@ public class frameCliente extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jSeparator1 = new javax.swing.JSeparator();
         labelImageInicio = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        labelRegresar = new javax.swing.JLabel();
         labelImageSave = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        labelGuardar = new javax.swing.JLabel();
         labelImageEdit = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        labelModificar = new javax.swing.JLabel();
         labelImageDelete = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        labelEliminar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -116,33 +116,33 @@ public class frameCliente extends javax.swing.JFrame {
         });
         jPanel1.add(labelImageInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel1.setText("Regresar");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
+        labelRegresar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
+        labelRegresar.setText("Regresar");
+        jPanel1.add(labelRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
 
         labelImageSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save-solid-60.png"))); // NOI18N
         labelImageSave.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(labelImageSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel3.setText("Guardar");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 120, -1, -1));
+        labelGuardar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
+        labelGuardar.setText("Guardar");
+        jPanel1.add(labelGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 120, -1, -1));
 
         labelImageEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/editar.png"))); // NOI18N
         labelImageEdit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(labelImageEdit, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel4.setText("Modificar");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, -1, -1));
+        labelModificar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
+        labelModificar.setText("Modificar");
+        jPanel1.add(labelModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, -1, -1));
 
         labelImageDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/borrar.png"))); // NOI18N
         labelImageDelete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(labelImageDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 270, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
-        jLabel5.setText("Eliminar");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 290, -1, -1));
+        labelEliminar.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
+        labelEliminar.setText("Eliminar");
+        jPanel1.add(labelEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 290, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 530));
 
@@ -191,22 +191,22 @@ public class frameCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JLabel labelApellido;
     private javax.swing.JLabel labelDireccion;
+    private javax.swing.JLabel labelEliminar;
+    private javax.swing.JLabel labelGuardar;
     private javax.swing.JLabel labelImageDelete;
     private javax.swing.JLabel labelImageEdit;
     private javax.swing.JLabel labelImageInicio;
     private javax.swing.JLabel labelImageSave;
+    private javax.swing.JLabel labelModificar;
     private javax.swing.JLabel labelNit;
     private javax.swing.JLabel labelNombre;
+    private javax.swing.JLabel labelRegresar;
     private javax.swing.JLabel labelTelefono;
     private javax.swing.JLabel labelTitulo;
     private javax.swing.JTextField txtApellido;
