@@ -6,6 +6,7 @@
 package framesCruds;
 
 import com.formdev.flatlaf.intellijthemes.FlatXcodeDarkIJTheme;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -20,6 +21,8 @@ public class login extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Login");
+        setIconImage(new ImageIcon(getClass().getResource("/hotelIcono.png")).getImage());
+        this.labelImageOcultar.setVisible(false);
     }
 
     
@@ -42,35 +45,32 @@ public class login extends javax.swing.JFrame {
         labelMensaje = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
+        labelImageVer = new javax.swing.JLabel();
+        labelImageOcultar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(50, 51, 51));
-        jPanel1.setLayout(null);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labelHotel.setBackground(new java.awt.Color(0, 0, 0));
         labelHotel.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         labelHotel.setForeground(new java.awt.Color(51, 51, 51));
         labelHotel.setText("Hotel Dulce Sueño");
-        jPanel1.add(labelHotel);
-        labelHotel.setBounds(100, 60, 120, 20);
+        jPanel1.add(labelHotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 120, -1));
 
         labelImagehotel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/hotel-regular-96 (1).png"))); // NOI18N
-        jPanel1.add(labelImagehotel);
-        labelImagehotel.setBounds(110, 10, 100, 50);
+        jPanel1.add(labelImagehotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 100, 50));
 
         labelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Captura (2).png"))); // NOI18N
-        jPanel1.add(labelImage);
-        labelImage.setBounds(0, 0, 320, 500);
+        jPanel1.add(labelImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         labelImageUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/user-circle-solid-96.png"))); // NOI18N
-        jPanel1.add(labelImageUser);
-        labelImageUser.setBounds(340, 110, 96, 100);
+        jPanel1.add(labelImageUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, -1, 100));
 
         labelImageKey.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/key-solid-96.png"))); // NOI18N
-        jPanel1.add(labelImageKey);
-        labelImageKey.setBounds(340, 270, 110, 100);
+        jPanel1.add(labelImageKey, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 110, 100));
 
         txtUser.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 12)); // NOI18N
         txtUser.setText("Ingrese su nombre de usuario");
@@ -79,13 +79,11 @@ public class login extends javax.swing.JFrame {
                 txtUserMouseClicked(evt);
             }
         });
-        jPanel1.add(txtUser);
-        txtUser.setBounds(450, 160, 210, 30);
+        jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 160, 210, 30));
 
         labelMensaje.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         labelMensaje.setText("Inicio de sesion");
-        jPanel1.add(labelMensaje);
-        labelMensaje.setBounds(390, 20, 270, 50);
+        jPanel1.add(labelMensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 270, 50));
 
         jButton1.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 14)); // NOI18N
         jButton1.setText("Iniciar Sesion");
@@ -94,8 +92,7 @@ public class login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(460, 410, 130, 30);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, 130, 30));
 
         txtPassword.setText("jPasswordField1");
         txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -103,8 +100,25 @@ public class login extends javax.swing.JFrame {
                 txtPasswordMouseClicked(evt);
             }
         });
-        jPanel1.add(txtPassword);
-        txtPassword.setBounds(460, 310, 200, 30);
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 200, 30));
+
+        labelImageVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/verl.png"))); // NOI18N
+        labelImageVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelImageVer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelImageVerMouseClicked(evt);
+            }
+        });
+        jPanel1.add(labelImageVer, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, -1, -1));
+
+        labelImageOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/oculto.png"))); // NOI18N
+        labelImageOcultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelImageOcultar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelImageOcultarMouseClicked(evt);
+            }
+        });
+        jPanel1.add(labelImageOcultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 40, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 500));
 
@@ -124,6 +138,18 @@ public class login extends javax.swing.JFrame {
     private void txtPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPasswordMouseClicked
         txtPassword.setText("");
     }//GEN-LAST:event_txtPasswordMouseClicked
+
+    private void labelImageVerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelImageVerMouseClicked
+        labelImageVer.setVisible(false);
+        labelImageOcultar.setVisible(true);
+        txtPassword.setEchoChar((char)0);
+    }//GEN-LAST:event_labelImageVerMouseClicked
+
+    private void labelImageOcultarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelImageOcultarMouseClicked
+        labelImageVer.setVisible(true);
+        labelImageOcultar.setVisible(false);
+        txtPassword.setEchoChar('*');
+    }//GEN-LAST:event_labelImageOcultarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -156,7 +182,9 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JLabel labelHotel;
     private javax.swing.JLabel labelImage;
     private javax.swing.JLabel labelImageKey;
+    private javax.swing.JLabel labelImageOcultar;
     private javax.swing.JLabel labelImageUser;
+    private javax.swing.JLabel labelImageVer;
     private javax.swing.JLabel labelImagehotel;
     private javax.swing.JLabel labelMensaje;
     private javax.swing.JPasswordField txtPassword;
